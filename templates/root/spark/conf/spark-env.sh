@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export JAVA_HOME={{java_home}}
 
 export SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
 
