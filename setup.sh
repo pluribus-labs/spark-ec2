@@ -19,6 +19,9 @@ source /root/.bash_profile
 # Load the cluster variables set by the deploy script
 source ec2-variables.sh
 
+yum install -y java-1.8.0-openjdk*
+#alternatives --remove java /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+
 # Set hostname based on EC2 private DNS name, so that it is set correctly
 # even if the instance is restarted with a different private DNS name
 PRIVATE_DNS=`wget -q -O - http://169.254.169.254/latest/meta-data/local-hostname`
