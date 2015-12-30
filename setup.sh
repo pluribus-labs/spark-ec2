@@ -20,6 +20,7 @@ source /root/.bash_profile
 source ec2-variables.sh
 
 yum install -y java-1.8.0-openjdk*
+yum remove -y java-1.7.0*
 #alternatives --remove java /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
 
 # Set hostname based on EC2 private DNS name, so that it is set correctly

@@ -20,6 +20,7 @@ echo $PRIVATE_DNS > /etc/hostname
 HOSTNAME=$PRIVATE_DNS  # Fix the bash built-in hostname variable too
 
 yum install -y java-1.8.0-openjdk*
+yum remove -y java-1.7.0*
 #alternatives --remove java /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
 
 echo "checking/fixing resolution of hostname"
