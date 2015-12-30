@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0
 BIN_FOLDER="/root/spark/sbin"
 
 if [[ "0.7.3 0.8.0 0.8.1" =~ $SPARK_VERSION ]]; then

@@ -7,6 +7,8 @@ if [ -d "tachyon" ]; then
   return 0
 fi
 
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0
+
 # Github tag:
 if [[ "$TACHYON_VERSION" == *\|* ]]
 then
